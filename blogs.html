@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ankit Joshi</title>
+    <link rel="shortcut icon" href="image/profile.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <style>
+    </style>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="/">Ankit Joshi</a>
+          </div>
+          <nav>
+            <ul id="navLinks">
+              <li><a href="/">Home</a></li>
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="/#about">About</a></li>
+            </ul>
+          </nav>
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="work-history">
+      <div class="container" style="z-index: 2">
+        <h2>Blogs</h2>
+        <div id="article-container"></div>
+      </div>
+    </section>
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Ankit Joshi. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script>
+      const apiUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@bhasabtc";
+    
+      async function fetchAndRenderArticles() {
+        try {
+          const response = await fetch(apiUrl);
+          if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+          }
+          const data = await response.json();
+    
+          const container = document.getElementById("article-container"); // Dynamic articles container
+          container.innerHTML = ""; // Clear previous dynamic articles only
+    
+          if (data && data.items && data.items.length > 0) {
+            data.items.forEach((item) => {
+              const articleContainer = document.createElement("a");
+              articleContainer.className = "work-item";
+              articleContainer.href = item.link;
+              articleContainer.target = "_blank"; // Open in a new tab
+    
+              const articleDiv = document.createElement("div");
+              articleDiv.className = "work-details";
+    
+              const title = document.createElement("h3");
+              title.textContent = item.title;
+              articleDiv.appendChild(title);
+    
+              articleContainer.appendChild(articleDiv);
+              container.appendChild(articleContainer);
+            });
+    
+            // Refresh ScrollTrigger after articles are added
+            setTimeout(() => {
+              ScrollTrigger.refresh();
+            }, 500); // Small delay to ensure elements are in DOM
+          } else {
+            container.innerHTML = "";
+          }
+        } catch (error) {
+          console.error("Error fetching the API:", error);
+          document.getElementById("dynamic-articles").innerHTML = 
+            "<p>Failed to load additional articles. Please try again later.</p>";
+        }
+      }
+    
+      // Call the function
+      fetchAndRenderArticles();
+    </script>
+    
+    <script src="https://unpkg.com/gsap@3.12.7/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3.12.7/dist/ScrollTrigger.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

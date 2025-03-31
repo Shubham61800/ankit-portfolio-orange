@@ -12,12 +12,18 @@
 
 const certificates = [
   {
-    title : "OffSec Certified Professional+ (OSCP+)",
-    company:"OffSec"
+    title: "OffSec Certified Professional+ (OSCP+)",
+    company: "OffSec",
   },
   {
-    title : "Red Teaming LLM Application",
-    company:"DeepLearning.AI"
+    title: "CREST Registered Penetration Tester",
+    company: "CREST",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C4E0BAQH1moXLdCVHRQ/company-logo_100_100/company-logo_100_100/0/1651140771071/crest_approved_logo?e=1743033600&v=beta&t=s5pwtToFseelM3olm34tZR0dW24Idqi9ohA1yPH-hsk",
+  },
+  {
+    title: "Red Teaming LLM Application",
+    company: "DeepLearning.AI",
   },
 
   {
@@ -42,12 +48,7 @@ const certificates = [
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C4E0BAQH1moXLdCVHRQ/company-logo_100_100/company-logo_100_100/0/1651140771071/crest_approved_logo?e=1743033600&v=beta&t=s5pwtToFseelM3olm34tZR0dW24Idqi9ohA1yPH-hsk",
   },
-  {
-    title: "CREST Registered Penetration Tester",
-    company: "CREST",
-    imageUrl:
-      "https://media.licdn.com/dms/image/v2/C4E0BAQH1moXLdCVHRQ/company-logo_100_100/company-logo_100_100/0/1651140771071/crest_approved_logo?e=1743033600&v=beta&t=s5pwtToFseelM3olm34tZR0dW24Idqi9ohA1yPH-hsk",
-  },
+
   {
     title: "Certified Red Team Operator",
     company: "Zero-Point Security LTD",
@@ -57,13 +58,25 @@ const certificates = [
       "https://api.eu.badgr.io/public/assertions/3sflStvnTbet8XtGeX7vdw?identity__email=ankitrakeshjoshi%40gmail.com",
   },
   {
-    title: "Certified AppSec Pentester (CAPen)",
+    title: "ISO 27001 Foundation - Information Security Certification",
+    company: "TUV SUD",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/D4D0BAQGFhpduw_DyfQ/img-crop_100/img-crop_100/0/1721631581233?e=1743033600&v=beta&t=uSNA4A53IJB8fNc1Y4rb8xE-aTHqQ7p3UvZlKRCQRE0",
+  },
+  {
+    title: "Certified Penetration Testing Expert",
+    company: "Pristine InfoSolutions Pvt. Ltd.",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C510BAQEVIg0H61imqg/company-logo_100_100/company-logo_100_100/0/1631391176259?e=1743033600&v=beta&t=EL2g1Z1R4tt72Sban5VnckWLxZsn67wdoNAUN-ZBCUA",
+  },
+  {
+    title: "Certified Network Pentester",
     company: "The SecOps Group",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/D4D0BAQGJvXkjZCWEJA/company-logo_100_100/company-logo_100_100/0/1718360904522/secops_group_logo?e=1743033600&v=beta&t=tqZ031fwzMVAiypw4on41VGdIzucc3Cx6UqmqYgtLNo",
   },
   {
-    title: "Certified Network Pentester",
+    title: "Certified AppSec Pentester (CAPen)",
     company: "The SecOps Group",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/D4D0BAQGJvXkjZCWEJA/company-logo_100_100/company-logo_100_100/0/1718360904522/secops_group_logo?e=1743033600&v=beta&t=tqZ031fwzMVAiypw4on41VGdIzucc3Cx6UqmqYgtLNo",
@@ -75,17 +88,18 @@ const certificates = [
       "https://media.licdn.com/dms/image/v2/D4D0BAQGJvXkjZCWEJA/company-logo_100_100/company-logo_100_100/0/1718360904522/secops_group_logo?e=1743033600&v=beta&t=tqZ031fwzMVAiypw4on41VGdIzucc3Cx6UqmqYgtLNo",
   },
   {
+    title: "Certified Information Security Analyst and Ethical Hacker",
+    company: "Pristine InfoSolutions Pvt. Ltd.",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C510BAQEVIg0H61imqg/company-logo_100_100/company-logo_100_100/0/1631391176259?e=1743033600&v=beta&t=EL2g1Z1R4tt72Sban5VnckWLxZsn67wdoNAUN-ZBCUA",
+  },
+  {
     title: "Certified AppSec Practitioner (CAP)",
     company: "The SecOps Group",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/D4D0BAQGJvXkjZCWEJA/company-logo_100_100/company-logo_100_100/0/1718360904522/secops_group_logo?e=1743033600&v=beta&t=tqZ031fwzMVAiypw4on41VGdIzucc3Cx6UqmqYgtLNo",
   },
-  {
-    title: "ISO 27001 Foundation - Information Security Certification",
-    company: "TUV SUD",
-    imageUrl:
-      "https://media.licdn.com/dms/image/v2/D4D0BAQGFhpduw_DyfQ/img-crop_100/img-crop_100/0/1721631581233?e=1743033600&v=beta&t=uSNA4A53IJB8fNc1Y4rb8xE-aTHqQ7p3UvZlKRCQRE0",
-  },
+
   {
     title: "Certified Network Security Specialist",
     company: "ICSI(International CyberSecurity Institute) UK",
@@ -93,40 +107,27 @@ const certificates = [
       "https://media.licdn.com/dms/image/v2/D4D0BAQGkR1L0YT4_uw/company-logo_100_100/company-logo_100_100/0/1683642868414/icsi_international_cybersecurity_institute__logo?e=1743033600&v=beta&t=n6jysfjO8mnOXd1_ByKDz1Rr94X9sJXNr89k5KSH8Pg",
     credientialUrl: "https://www.icsi.co.uk/certificates/rxoqbzbksm",
   },
-  {
-    title: "Certified Penetration Testing Expert",
-    company: "Pristine InfoSolutions Pvt. Ltd.",
-    imageUrl:
-      "https://media.licdn.com/dms/image/v2/C510BAQEVIg0H61imqg/company-logo_100_100/company-logo_100_100/0/1631391176259?e=1743033600&v=beta&t=EL2g1Z1R4tt72Sban5VnckWLxZsn67wdoNAUN-ZBCUA",
-  },
-  {
-    title: "Certified Information Security Analyst and Ethical Hacker",
-    company: "Pristine InfoSolutions Pvt. Ltd.",
-    imageUrl:
-      "https://media.licdn.com/dms/image/v2/C510BAQEVIg0H61imqg/company-logo_100_100/company-logo_100_100/0/1631391176259?e=1743033600&v=beta&t=EL2g1Z1R4tt72Sban5VnckWLxZsn67wdoNAUN-ZBCUA",
-  },
 ];
-
 
 const certContainer = document.getElementById("certification-grid");
 
-certificates.forEach(cert => {
+certificates.forEach((cert) => {
   const certDiv = document.createElement("div");
-  certDiv.className="cert-item"
+  certDiv.className = "cert-item";
 
   const certDetails = document.createElement("div");
-  certDetails.className="cert-details";
+  certDetails.className = "cert-details";
 
   const certName = document.createElement("h3");
-  certName.innerText=cert.title
+  certName.innerText = cert.title;
 
   const certCompany = document.createElement("p");
-  certCompany.innerText=cert.company;
+  certCompany.innerText = cert.company;
 
   certDetails.append(certName);
   certDetails.append(certCompany);
 
-  certDiv.append(certDetails)
+  certDiv.append(certDetails);
   certContainer.appendChild(certDiv);
 });
 

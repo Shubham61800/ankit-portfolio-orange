@@ -107,6 +107,7 @@ const certificates = [
   },
 ];
 
+
 const certContainer = document.getElementById("certification-grid");
 
 certificates.forEach(cert => {

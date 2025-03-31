@@ -1,7 +1,7 @@
 :root {
   --primary-bg: #ffffff; /* White Background */
   --secondary-bg: #fdf6ed; /* Soft Warm Beige */
-  --primary-color: #b45309; /* Muted Burnt Orange */
+  --primary-color: #FF6900; /* Muted Burnt Orange */
   --accent-color: #f59e0b; /* Golden Orange */
   --text-color: #1e293b; /* Dark Slate for Readability */
   --text-muted: #64748b; /* Cool Grayish-Blue */
@@ -375,7 +375,7 @@ nav ul li a:hover::after {
 .honors {
   padding: 80px 0;
   position: relative;
-}
+} 
 .brand-logos img{
   height: 30px;
   display: flex;

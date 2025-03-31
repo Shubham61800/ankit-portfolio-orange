@@ -12,6 +12,15 @@
 
 const certificates = [
   {
+    title : "OffSec Certified Professional+ (OSCP+)",
+    company:"OffSec"
+  },
+  {
+    title : "Red Teaming LLM Application",
+    company:"DeepLearning.AI"
+  },
+
+  {
     title: "AWS Certified Security - Spaciality",
     company: "Amazon Web Services - AWS",
     imageUrl:
@@ -29,6 +38,12 @@ const certificates = [
   },
   {
     title: "CREST CPSA",
+    company: "CREST",
+    imageUrl:
+      "https://media.licdn.com/dms/image/v2/C4E0BAQH1moXLdCVHRQ/company-logo_100_100/company-logo_100_100/0/1651140771071/crest_approved_logo?e=1743033600&v=beta&t=s5pwtToFseelM3olm34tZR0dW24Idqi9ohA1yPH-hsk",
+  },
+  {
+    title: "CREST Registered Penetration Tester",
     company: "CREST",
     imageUrl:
       "https://media.licdn.com/dms/image/v2/C4E0BAQH1moXLdCVHRQ/company-logo_100_100/company-logo_100_100/0/1651140771071/crest_approved_logo?e=1743033600&v=beta&t=s5pwtToFseelM3olm34tZR0dW24Idqi9ohA1yPH-hsk",

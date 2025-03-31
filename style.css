@@ -11,8 +11,6 @@
   --glass-border: rgba(180, 83, 9, 0.15); /* Softer Orange Border */
   --glass-shadow: rgba(0, 0, 0, 0.04); /* Subtle Shadow */
   --transition: all 0.3s ease; /* Smooth Transition */
-
-
 }
 
 * {
